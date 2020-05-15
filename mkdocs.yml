@@ -1,0 +1,80 @@
+# Project Information
+site_name: TechTutorials
+site_description: My learnings
+site_author: Aditi Abhang
+site_url: https://pages.github.com/aditiabhang/my-tech-docs
+
+#Repository Information
+repo_name: aditiabhang/my-tech-docs
+repo_url: https://github.com/aditiabhang/my-tech-docs
+remote_name: origin
+edit_uri: edit/master/docs/
+
+# Page tree
+nav:
+  - Home:
+    - index.md
+    # - home/contributing.md
+    # - home/useful_tech_topics_links.md  
+    # - home/interesting_tech_reads.md 
+  - Github:
+    # - github/linking_remote_n_local_repos.md
+    # - github/rebase_a_branch.md
+    # - github/updating_code_on_branch.md  
+
+# Configuration
+theme:
+  name: material
+  custom_dir: theme
+  logo:
+    icon: cloud
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  feature:
+    tabs: true
+  palette:
+    primary: default
+    accent: default
+
+# Customization
+extra_css:
+  - assets/styles/extra.css
+
+# Extensions
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: docs/_snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tilde
